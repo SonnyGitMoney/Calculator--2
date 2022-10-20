@@ -2,45 +2,43 @@
 <html lang="en-US">
 
 <head>
-  <script src="js/script.jss"></script>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Calculator</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script src="js/scripts.js"></script>
 </head>
-
 <body>
   <h1>Calculator!</h1>
-    <form>
-      <label for="input1">number 1</label>
-      <input id="input1" type="number" name="input1">
-      <label for="input2">number 2</label>
-      <input id="input2" type="number" name="input2">
-      <button type="submit">Show me the numba!</button>
-    </form>
-
-    <form id="radio-button">
-      <label>
-        <input type="radio" name="number" value="add">
+  <form id="calculator">
+      <label for="input1">number 1:</label>
+      <input id="input1" type="text">
+      <label for="input2">number 2:</label>
+      <input id="input2" type="text">
+      
+			<button type="submit" class="btn">Show me the numba!</button>
+			<br>
+			<label>
+        <input type="radio" name="operator" value="add">
         Add
 			</label><br>
       <label>
-        <input type="radio" name="number" value="subtract">
+        <input type="radio" name="operator" value="subtract">
         Subtract
 			</label><br>
 			<label>
-        <input type="radio" name="number" value="muliply">
+        <input type="radio" name="operator" value="muliply">
         Multiply
 			</label><br>
 			<label>
-        <input type="radio" name="number" value="divide">
+        <input type="radio" name="operator" value="divide">
         Divide
 			</label><br>
     </form>
 
-    <div id="result" class="hidden">
-      <h1>Your Numba iz</h1>
-      <span id="resultMessage">_____</span>
+	
+    <h2>Yo numba izz</h2>
+		<p id="output"></p>
 
-    </div>
+  
 </body>
 
 </html>
