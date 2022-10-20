@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <script src="js/script.jss"></script>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <h1>Calculator!</h1>
+    <form>
+      <label for="input1">number 1</label>
+      <input id="input1" type="number" name="input1">
+      <label for="input2">number 2</label>
+      <input id="input2" type="number" name="input2">
+      <button type="submit">Show me the numba!</button>
+    </form>
+
+    <form id="radio-button">
+      <label>
+        <input type="radio" name="number" value="add">
+        Add
+			</label><br>
+      <label>
+        <input type="radio" name="number" value="subtract">
+        Subtract
+			</label><br>
+			<label>
+        <input type="radio" name="number" value="muliply">
+        Multiply
+			</label><br>
+			<label>
+        <input type="radio" name="number" value="divide">
+        Divide
+			</label><br>
+    </form>
+
+    <div id="result" class="hidden">
+      <h1>Your Numba iz</h1>
+      <span id="resultMessage">_____</span>
+
+    </div>
+</body>
+
+</html>
